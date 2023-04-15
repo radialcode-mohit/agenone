@@ -15,10 +15,13 @@ const MyNav = () => {
       <Container>
         <div className="d-flex justify-content-between align-items-center">
           <div className="d-flex">
-            <img src={pagelogo} alt="pagelogo" />
-            <span className="fw_700 fs_xl fontstyle_italic clr_white">
-              Agenone
-            </span>
+            <a href="#">
+              {" "}
+              <img src={pagelogo} alt="pagelogo" />
+              <span className="fw_700 fs_xl fontstyle_italic clr_white">
+                Agenone
+              </span>
+            </a>
           </div>
           <ul
             className={
