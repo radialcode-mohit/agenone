@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import MyNav from "./components/MyNav";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle";
+import Passinate from "./components/Passinate";
+import SocialIcons from "./components/SocialIcons";
+import { Services } from "./components/Services";
+import Header from "./components/Header";
+import OurProjects from "./components/OurProjects";
+import Comment from "./components/Comment";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Footer from "./components/Footer";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Services />
+      <Passinate />
+      <OurProjects />
+      <SocialIcons />
+      <Comment />
+      <Footer />
+    </>
   );
 }
 
